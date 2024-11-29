@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-image: url('images/bg.jpg');
+    background-image: url('public/images/bg.jpg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -72,7 +72,7 @@ header.sticky {
 /* Hero Section */
 .hero {
     text-align: center;
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    background: url('public/images/bg.jpg') no-repeat center center/cover;
     color: rgb(255, 255, 255);
     padding: 50px 20px;
 }
@@ -82,11 +82,18 @@ header.sticky {
 }
 .hero .cta-button {
     background: #ffffff;
-    color: white;
+    /* color: white; */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
 }
+
+.hero .cta-button:hover{
+    color: white;
+}
+
+
+
 .hero .cta-button:hover {
     background: #56347b;
 }
@@ -135,12 +142,12 @@ header.sticky {
     background-color: #f7f3fc; /* Light background change */
 }
 
-/* Program card images */
+/* Program card public/images */
 .program-card img {
     width: 100%; /* Make image fit within the card */
     height: 180px; /* Set a slightly larger height */
     object-fit: cover; /* Ensure proper scaling */
-    border-radius: 10px; /* Rounded corners for images */
+    border-radius: 10px; /* Rounded corners for public/images */
     margin-bottom: 15px;
 }
 
@@ -279,7 +286,7 @@ footer img {
 
 /* Apply background image to the entire page */
 body {
-    background-image: url('images/bg.jpg'); /* Path to your background image */
+    background-image: url('public/images/bg.jpg'); /* Path to your background image */
     background-size: cover; /* Ensure the background image covers the entire page */
     background-position: center center; /* Center the background image */
     background-attachment: fixed; /* Keeps the background fixed when scrolling */
